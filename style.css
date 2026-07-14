@@ -182,11 +182,16 @@ section.tight { padding: 56px 0; }
   padding: 36px; box-shadow: var(--shadow-sm);
 }
 .avatar {
+  position: relative;
   aspect-ratio: 1/1.15; border-radius: var(--radius); overflow: hidden;
   background: linear-gradient(150deg, var(--navy), var(--blue));
   display: grid; place-items: center; color: #fff; box-shadow: var(--shadow-md);
 }
 .avatar .initials { font-size: 3.4rem; font-weight: 800; letter-spacing: 1px; }
+.avatar img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 68% 32%; display: block;
+}
 .profile-body h3 { font-size: 1.5rem; margin-bottom: 2px; }
 .profile-role { color: var(--blue); font-weight: 700; margin-bottom: 4px; }
 .profile-affil { color: var(--muted); margin-bottom: 18px; }
