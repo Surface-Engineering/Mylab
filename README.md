@@ -42,6 +42,17 @@ To use a custom domain, add a `CNAME` file with your domain and configure DNS.
   You can wrap the `<h3>` in an `<a href="…">` to link to the article.
 - **Change the theme color:** edit `--blue`, `--navy`, and `--accent` in
   `style.css`.
+- **Add the journal cover images:** save your three supplementary-cover images
+  into the `covers/` folder with these exact names —
+  `energy-environ-sci.jpg`, `adv-intell-syst.jpg`, `acs-macro-lett.jpg`.
+  They appear in the "Featured on the Cover" section at the top of the
+  Publications page. A placeholder shows until the files are added.
+
+## News page
+
+The News page (`news.html`) uses the original Korean headlines, outlets, and
+article links from the existing site. Each card links directly to the source
+article and opens in a new tab.
 
 ## Content source
 

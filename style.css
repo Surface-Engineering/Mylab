@@ -282,6 +282,65 @@ section.tight { padding: 56px 0; }
 .news-item .outlet { font-size: .82rem; font-weight: 700; color: var(--blue); text-transform: uppercase; letter-spacing: .05em; }
 .news-tag { flex: none; background: var(--bg-softer); color: var(--muted); font-size:.78rem; font-weight:700; padding:6px 12px; border-radius: 999px; white-space: nowrap; }
 
+/* ---------- Journal cover showcase ---------- */
+.cover-showcase {
+  background: linear-gradient(180deg, var(--bg-soft), var(--bg));
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 34px 34px 38px; margin-bottom: 44px; box-shadow: var(--shadow-sm);
+}
+.cover-showcase .kicker { color: var(--blue); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; margin-bottom: 8px; }
+.cover-showcase h2 { font-size: 1.5rem; margin-bottom: 6px; }
+.cover-showcase .sub { color: var(--muted); margin-bottom: 26px; font-size: 1rem; }
+.cover-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.cover-card {
+  display: flex; flex-direction: column; background: var(--bg); border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.cover-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+.cover-frame {
+  position: relative; aspect-ratio: 3/4; background: var(--bg-softer);
+  display: grid; place-items: center; overflow: hidden;
+}
+.cover-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* placeholder shown only when the <img> fails to load (before you add the file) */
+.cover-frame img { background: var(--bg-softer); }
+.cover-ph {
+  position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 8px;
+  color: var(--muted); font-size: .82rem; padding: 20px;
+  background: repeating-linear-gradient(45deg, #eef3f9, #eef3f9 12px, #e6eef7 12px, #e6eef7 24px);
+}
+.cover-ph strong { color: var(--blue-dark); font-size: .9rem; }
+.cover-frame img[src]:not([src=""]) + .cover-ph { display: none; }
+.cover-ribbon {
+  position: absolute; top: 12px; left: 12px; z-index: 2;
+  background: var(--blue); color: #fff; font-size: .72rem; font-weight: 700;
+  letter-spacing: .05em; text-transform: uppercase; padding: 5px 11px; border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+}
+.cover-meta { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.cover-journal { color: var(--navy); font-weight: 800; font-size: 1rem; line-height: 1.25; }
+.cover-desc { color: var(--muted); font-size: .86rem; line-height: 1.5; }
+.cover-link { margin-top: auto; font-weight: 700; font-size: .85rem; color: var(--blue); }
+
+/* Cover badge on individual publications */
+.pub-badge {
+  display: inline-block; margin-left: 8px; vertical-align: middle;
+  background: linear-gradient(135deg, var(--blue), var(--accent)); color: #fff;
+  font-size: .68rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 999px;
+}
+.pub-item.is-cover { border-color: #bcd8f4; box-shadow: 0 0 0 1px #bcd8f4, var(--shadow-sm); }
+
+/* News cards as links */
+a.news-item { color: inherit; }
+a.news-item:hover { color: inherit; }
+
+@media (max-width: 860px) {
+  .cover-grid { grid-template-columns: 1fr; }
+  .cover-frame { aspect-ratio: 3/4; max-width: 280px; margin: 0 auto; width: 100%; }
+}
+
 /* ---------- Footer ---------- */
 .site-footer { background: var(--navy); color: #b9cbe0; padding: 56px 0 30px; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
