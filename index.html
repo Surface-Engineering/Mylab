@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>News · Surface Engineering Lab</title>
-<meta name="description" content="News and media coverage of the Surface Engineering Laboratory at Gyeongsang National University." />
+<title>Surface Engineering Lab · Gyeongsang National University</title>
+<meta name="description" content="Surface Engineering Laboratory at Gyeongsang National University — surface modification, thin films, tribology, and electrohydrodynamic jet printing for next-generation electronic devices." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -12,6 +12,7 @@
 </head>
 <body>
 
+<!-- ===== Header ===== -->
 <header class="site-header">
   <nav class="nav">
     <a class="brand" href="index.html">
@@ -25,72 +26,135 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="menu">
-      <li><a href="index.html">About</a></li>
+      <li><a href="index.html" class="active">About</a></li>
       <li><a href="members.html">Members</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="openings.html">Openings</a></li>
-      <li><a href="news.html" class="active">News</a></li>
+      <li><a href="news.html">News</a></li>
     </ul>
   </nav>
 </header>
 
-<div class="page-head">
-  <div class="container">
-    <div class="kicker">Newsroom</div>
-    <h1>News</h1>
-    <p>언론에 소개된 연구실의 연구 성과와 소식입니다.</p>
-  </div>
-</div>
-
-<section>
-  <div class="container">
-    <div class="grid" style="gap:16px">
-
-      <a class="news-item" href="https://news.nate.com/view/20251208n06717" target="_blank" rel="noopener">
-        <div>
-          <div class="outlet">네이트 뉴스</div>
-          <h3>경상국립대·성균관대·칼리파대 국제공동연구</h3>
-        </div>
-        <span class="news-tag">기사 보기 ↗</span>
-      </a>
-
-      <a class="news-item" href="https://www.lecturernews.com/news/articleView.html?idxno=192192" target="_blank" rel="noopener">
-        <div>
-          <div class="outlet">한국강사신문</div>
-          <h3>경상국립대학교 조대현 교수팀, "세계 최고 성능의 마이크로 슈퍼커패시터 프린팅 기술 구현"</h3>
-        </div>
-        <span class="news-tag">기사 보기 ↗</span>
-      </a>
-
-      <a class="news-item" href="https://m.nocutnews.co.kr/news/amp/6210772" target="_blank" rel="noopener">
-        <div>
-          <div class="outlet">노컷뉴스</div>
-          <h3>국내 연구팀, 초저주파 진동에너지 수확 가능 나노발전 메커니즘 발견</h3>
-        </div>
-        <span class="news-tag">기사 보기 ↗</span>
-      </a>
-
-      <a class="news-item" href="https://materic.or.kr/mp/content?listType=10&amp;f_id=173" target="_blank" rel="noopener">
-        <div>
-          <div class="outlet">기계·로봇 연구정보센터</div>
-          <h3>빗방울의 강하에너지를 이용한 투명 마찰전기 나노발전기와 태양광 발전소자와의 집적</h3>
-        </div>
-        <span class="news-tag">기사 보기 ↗</span>
-      </a>
-
-      <a class="news-item" href="https://www.industrynews.co.kr/news/articleView.html?idxno=45275" target="_blank" rel="noopener">
-        <div>
-          <div class="outlet">인더스트리뉴스</div>
-          <h3>"비 오는 날에도 태양광 발전 가능해진다"…하이브리드 마찰전기·태양광 소자 개발</h3>
-        </div>
-        <span class="news-tag">기사 보기 ↗</span>
-      </a>
-
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Thin Film &amp; Surface Engineering</span>
+    <h1>Engineering functional surfaces, from atoms to devices</h1>
+    <p class="lead">
+      We design and modify surfaces to control their properties — synthesizing thin films,
+      composites, and printable inks, and patterning them with electrohydrodynamic jet printing
+      for the next generation of electronic and energy devices.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="publications.html">View Publications</a>
+      <a class="btn btn-ghost" href="openings.html">Join the Lab</a>
     </div>
   </div>
 </section>
 
+<!-- ===== About / Mission ===== -->
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">About the Lab</div>
+      <h2>Surface modification for high-performance materials and devices</h2>
+      <p>
+        The Surface Engineering Laboratory at Gyeongsang National University focuses on
+        <strong>surface modification</strong> — designing functional surfaces, developing materials that
+        control surface properties, and creating fine functional patterns through electrohydrodynamic
+        jet printing for electronic devices.
+      </p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card area-card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        </div>
+        <h3>Materials Synthesis &amp; Characterization</h3>
+        <p>Synthesis and characterization of materials for surface modification — including thin films, composites, and printing inks.</p>
+      </div>
+      <div class="card area-card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        </div>
+        <h3>Surface Property Evaluation</h3>
+        <p>Evaluating surface properties using tribometry and atomic force microscopy to understand friction, wear, and nanoscale behavior.</p>
+      </div>
+      <div class="card area-card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg>
+        </div>
+        <h3>Surface Enhancement Methods</h3>
+        <p>Developing new surface enhancement techniques such as texturing and modification to improve durability and function.</p>
+      </div>
+      <div class="card area-card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v9m0 0l3-3m-3 3L9 8"/><rect x="5" y="13" width="14" height="8" rx="2"/></svg>
+        </div>
+        <h3>Electrohydrodynamic Jet Printing</h3>
+        <p>Creating fine functional patterns via electrohydrodynamic (EHD) jet printing for high-resolution electronic devices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Focus areas / stats ===== -->
+<section class="section-alt tight">
+  <div class="container">
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Printed &amp; Flexible Electronics</h3>
+        <p>Microsupercapacitors, memristors, and transparent electrodes built with MXene and functional inks via EHD printing.</p>
+      </div>
+      <div class="card">
+        <h3>Energy Harvesting</h3>
+        <p>Triboelectric and piezoelectric nanogenerators that harvest energy from vibration, wind, and raindrops.</p>
+      </div>
+      <div class="card">
+        <h3>Tribology &amp; 2D Materials</h3>
+        <p>Eco-friendly 2D-material lubricants and the nanotribology of graphene, MoS₂, and hexagonal boron nitride.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Director highlight ===== -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Director</div>
+      <h2>Led by Prof. Daehyun Cho</h2>
+    </div>
+    <div class="profile">
+      <div class="avatar"><span class="initials">DC</span></div>
+      <div class="profile-body">
+        <h3>Daehyun Cho</h3>
+        <div class="profile-role">Professor</div>
+        <div class="profile-affil">Department of Mechatronics Engineering · Gyeongsang National University</div>
+        <p>
+          Prof. Cho leads the Surface Engineering Laboratory, working at the intersection of surface science,
+          tribology, and printed electronics. His research spans thin-film and composite synthesis,
+          eco-friendly 2D-material lubricants, and electrohydrodynamic jet printing for functional devices.
+        </p>
+        <div class="contact-row">
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            CHO@GNU.AC.KR
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0 8 7 15 15 15 1 0 2-1 2-2v-2l-4-2-2 2c-2-1-5-4-6-6l2-2-2-4H6C5 3 4 4 4 5z"/></svg>
+            +82-55-772-3387
+          </span>
+        </div>
+        <a class="btn btn-blue" href="members.html">Meet the team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
